@@ -1,0 +1,73 @@
+/* Base styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the body to full viewport height */
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(255, 105, 97, 0.3); /* Soft red shadow */
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px; /* Larger font size */
+    color: #ff0055; /* Deep red text color */
+}
+
+label {
+    display: block;
+    margin-top: 15px; /* Slightly more spacing */
+    font-weight: bold;
+    color: #ff0055; /* Deep red label text color */
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px; /* Larger input padding */
+    margin-top: 12px; /* Slightly less top margin */
+    border: 2px solid #ff0055; /* Deep red border with increased width */
+    border-radius: 8px; /* Rounded input corners with increased radius */
+    font-size: 16px; /* Smaller font size for inputs */
+}
+
+button {
+    background-color: #ff0055; /* Deep red button color */
+    color: #fff;
+    padding: 12px 24px; /* Larger button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #ff1a75; /* Darker red on hover */
+}
+
+#result {
+    font-size: 24px; /* Larger result font size */
+    margin-top: 20px;
+    color: #ff0055; /* Deep red result text color */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+}
